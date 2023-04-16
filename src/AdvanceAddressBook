@@ -22,3 +22,6 @@ sql-->create table addressBook(first_name varchar(40) not null,
        ("rohith","kumar","vizag","vishakapatanam","andrapradesh",508521,7863427829,"rohith@gmail.com"),
        ("bhargav","sheik","thuni","vishakapatanam","andrapradesh",508932,6655334289,"bhargav@gmail.com");
        select* from addressBook;
+
+UC4- Ability to edit existing contact person using their name
+sql-->update addressBook set phone_number=8897323866 where first_name="rahul"
