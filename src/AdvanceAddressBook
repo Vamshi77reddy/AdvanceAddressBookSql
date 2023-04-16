@@ -38,4 +38,10 @@ sql-->select count(city),count(state) from addressBook where city="hyderabad" an
 UC8-Ability to retrieve entries sorted alphabetically by Person’s name for a given city
 sql-->select first_name from addressBook where city="hyderabad" order by first_name asc;
 
+UC9-Ability to identify each Address Book with name and Type.
+sql-->alter table addressBook add address_book_name varchar(20) after last_name;
+      alter table addressBook add type varchar(20) after address_book_name;
 
+      update addressBook set address_book_name="Relation",type="Family" where first_name in("vamshi","sai");
+            update addressBook set address_book_name="frnd",type="friends" where first_name in("rahul");
+      update addressBook set address_book_name="work",type="workfriend" where first_name in("bhargav");
