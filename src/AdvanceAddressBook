@@ -32,4 +32,7 @@ sql-->delete from addressBook where first_name="rohith";
 UC6-Ability to Retrieve Person belonging to a City or State from the Address Book
 sql-->select state,city from addressBook where first_name="vamshi";
 
+UC7-Ability to understand the size of address book by City and State
+sql-->select count(city),count(state) from addressBook where city="hyderabad" and state="telangana"
+
 
