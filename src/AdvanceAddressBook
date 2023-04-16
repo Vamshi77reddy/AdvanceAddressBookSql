@@ -29,3 +29,7 @@ sql-->update addressBook set phone_number=8897323866 where first_name="rahul"
 UC5-Ability to delete a person using person's name
 sql-->delete from addressBook where first_name="rohith";
 
+UC6-Ability to Retrieve Person belonging to a City or State from the Address Book
+sql-->select state,city from addressBook where first_name="vamshi";
+
+
