@@ -4,3 +4,12 @@ sql--> create database addressBook;
 
 UC2-Ability to create a Address Book Table with first and last names, address, city, state, zip, phone number and email as its attributes.
 use addressBook;
+sql-->create table addressBook(first_name varchar(40) not null,
+      last_name varchar(40) not null,
+      address varchar(40),
+      city varchar(40),
+      state varchar(40),
+      zip int,
+      phone_number long,
+      emain varchar(40));
+      
